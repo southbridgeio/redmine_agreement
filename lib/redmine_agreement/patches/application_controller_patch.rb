@@ -23,11 +23,11 @@ module RedmineAgreement
 
         def allowed_path?
           [
-            accept_agreements_url,
-            reject_agreements_url,
+            accept_agreements_path,
+            reject_agreements_path,
             Setting[:plugin_redmine_agreement][:agreement_page],
             Setting[:plugin_redmine_agreement][:reject_agreement_page]
-          ].include?(request.original_url)
+          ].include?(request.original_fullpath)
         end
       end
     end
