@@ -1,0 +1,5 @@
+ru:
+  agreement:
+    enable: Включить плагин
+    agreement_page: Страница wiki c соглашением
+    reject_agreement_page: Страница wiki для отклонившых соглашение

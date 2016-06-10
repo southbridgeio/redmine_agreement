@@ -1,3 +1,5 @@
-# English strings go here for Rails i18n
 en:
-  # my_label: "My label"
+  agreement:
+    enable: Enable plugin
+    agreement_page: URL of the wiki with the agreement
+    reject_agreement_page: URL of the wiki for users who reject the agreement
