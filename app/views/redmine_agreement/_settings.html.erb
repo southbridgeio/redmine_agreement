@@ -1,0 +1,22 @@
+<table>
+  <tbody>
+    <tr>
+      <th>Включить плагин</th>
+      <td>
+        <%= check_box_tag "settings[enable_agreement]", true, @settings['enable_agreement'] %>
+      </td>
+    </tr>
+    <tr>
+      <th>Страница wiki с пользовательским соглашением</th>
+      <td>
+        <%= text_field_tag 'settings[agreement_page]', @settings['agreement_page'] %>
+      </td>
+    </tr>
+    <tr>
+      <th>Страница wiki, для отклонивших соглашение</th>
+      <td>
+        <%= text_field_tag 'settings[reject_agreement_page]', @settings['reject_agreement_page'] %>
+      </td>
+    </tr>
+  </tbody>
+</table>
