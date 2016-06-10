@@ -1,2 +1,6 @@
-# Plugin's routes
-# See: http://guides.rubyonrails.org/routing.html
+resources :agreements, only: [] do
+  collection do
+    get :accept
+    get :reject
+  end
+end
