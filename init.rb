@@ -4,11 +4,11 @@ require_dependency 'redmine_agreement/patches/application_controller_patch'
 
 Redmine::Plugin.register :redmine_agreement do
   name 'Redmine Agreement plugin'
-  author 'Author name'
-  description 'This is a plugin for Redmine'
-  version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  url 'https://github.com/centosadmin/redmine_agreement'
+  description 'This is a plugin for Redmine to add agreement'
+  version '0.1.0'
+  author 'Centos-admin.ru'
+  author_url 'http://centos-admin.ru'
 
   settings(partial: 'redmine_agreement/settings',
            default: {
