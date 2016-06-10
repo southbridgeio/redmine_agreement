@@ -1,3 +1,0 @@
-= redmine_agreement
-
-Description goes here
