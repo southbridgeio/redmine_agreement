@@ -1,5 +1,6 @@
 require 'redmine'
 require_dependency 'redmine_agreement/patches/user_patch'
+require_dependency 'redmine_agreement/patches/application_controller_patch'
 
 Redmine::Plugin.register :redmine_agreement do
   name 'Redmine Agreement plugin'
