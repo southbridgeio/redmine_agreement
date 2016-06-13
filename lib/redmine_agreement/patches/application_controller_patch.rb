@@ -18,6 +18,7 @@ module RedmineAgreement
           Setting[:plugin_redmine_agreement][:enable_agreement] and
             Setting[:plugin_redmine_agreement][:agreement_page].present? and
             Setting[:plugin_redmine_agreement][:reject_agreement_page].present? and not
+            User.current.anonymous? and not
             User.current.accept_agreement?
         end
 
