@@ -1,5 +1,9 @@
 # Redmine Agreement Plugin
 
+*[Русская версия документации](README.ru.md)*
+
+Plugin developed by [Centos-admin.ru](http://centos-admin.ru/).
+
 This plugin adds the user agreement to Redmine.
 
 ## Usage
