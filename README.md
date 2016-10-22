@@ -2,7 +2,7 @@
 
 *[Русская версия документации](README.ru.md)*
 
-Plugin developed by [Centos-admin.ru](http://centos-admin.ru/).
+Plugin is developed by [Centos-admin.ru](http://centos-admin.ru/).
 
 This plugin adds the user agreement to Redmine.
 
@@ -13,7 +13,7 @@ This plugin adds the user agreement to Redmine.
 bundle exec rake redmine:plugins:migrate
 ```
 
-2. Add wiki page for the agreement and wiki page that will be shown when user reject the agreement.
+2. Add wiki page for the agreement and wiki page that will be shown when a user rejects the agreement.
 Add on the pages links to accept and reject agreement: `"Accept":/agreements/accept | "Reject":/agreements/reject`
 
 3. Add urls of the pages to settings without domain. For example, if url is 'http://site.com/projects/clients/wiki/my_wiki'
