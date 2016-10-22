@@ -14,7 +14,7 @@ bundle exec rake redmine:plugins:migrate
 ```
 
 2. Add wiki page for the agreement and wiki page that will be shown when a user rejects the agreement.
-Add on the pages links to accept and reject agreement: `"Accept":/agreements/accept | "Reject":/agreements/reject`
+Add on the pages links to accept and reject the agreement: `"Accept":/agreements/accept | "Reject":/agreements/reject`
 
 3. Add urls of the pages to settings without domain. For example, if url is 'http://site.com/projects/clients/wiki/my_wiki'
 then you need to add to settings '/projects/clients/wiki/my_wiki'.
