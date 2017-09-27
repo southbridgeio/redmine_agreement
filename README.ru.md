@@ -17,3 +17,7 @@ bundle exec rake redmine:plugins:migrate
 то в настройки нужно добавить '/projects/clients/wiki/my_wiki'.
 
 4. Включите плагин в настройках.
+
+# Автор плагина
+
+Плагин разработан в компании [Southbridge](https://southbridge.io)

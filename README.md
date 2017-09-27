@@ -2,8 +2,6 @@
 
 *[Русская версия документации](README.ru.md)*
 
-Plugin is developed by [Centos-admin.ru](http://centos-admin.ru/).
-
 This plugin adds the user agreement to Redmine.
 
 ## Usage
@@ -21,3 +19,6 @@ then you need to add to settings '/projects/clients/wiki/my_wiki'.
 
 4. Enable the plugin in settings.
 
+# Author of the Plugin
+
+The plugin is designed by [Southbridge](https://southbridge.io)

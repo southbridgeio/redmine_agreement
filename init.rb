@@ -7,12 +7,12 @@ Redmine::Plugin.register :redmine_agreement do
   url 'https://github.com/centosadmin/redmine_agreement'
   description 'This is a plugin for Redmine to add agreement'
   version '0.1.0'
-  author 'Centos-admin.ru'
-  author_url 'http://centos-admin.ru'
+  author 'Southbridge'
+  author_url 'https://github.com/centosadmin'
 
   settings(partial: 'redmine_agreement/settings',
            default: {
              'enable_agreement': false,
-             'agreement_page': "",
-             'reject_agreemnet_page': "" })
+             'agreement_page': '',
+             'reject_agreemnet_page': '' })
 end
