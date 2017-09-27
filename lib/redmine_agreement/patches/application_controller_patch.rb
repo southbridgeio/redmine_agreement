@@ -9,26 +9,35 @@ module RedmineAgreement
         private
 
         def check_agreement
-          if need_accept_agreement? and not allowed_path?
-            redirect_to Setting[:plugin_redmine_agreement][:agreement_page]
+          if need_accept_agreement? && !allowed_path?
+            redirect_to plugin_settings['agreement_page']
           end
         end
 
         def need_accept_agreement?
-          Setting[:plugin_redmine_agreement][:enable_agreement] and
-            Setting[:plugin_redmine_agreement][:agreement_page].present? and
-            Setting[:plugin_redmine_agreement][:reject_agreement_page].present? and not
-            User.current.anonymous? and not
-            User.current.accept_agreement?
+          plugin_settings['enable_agreement'] &&
+              plugin_settings['agreement_page'].present? &&
+              plugin_settings['reject_agreement_page'].present? &&
+              !user.anonymous? &&
+              !user.admin? &&
+              !user.accept_agreement?
         end
 
         def allowed_path?
           [
-            accept_agreements_path,
-            reject_agreements_path,
-            Setting[:plugin_redmine_agreement][:agreement_page],
-            Setting[:plugin_redmine_agreement][:reject_agreement_page]
+              accept_agreements_path,
+              reject_agreements_path,
+              plugin_settings['agreement_page'],
+              plugin_settings['reject_agreement_page']
           ].include?(request.original_fullpath)
+        end
+
+        def user
+          User.current
+        end
+
+        def plugin_settings
+          Setting.plugin_redmine_agreement
         end
       end
     end

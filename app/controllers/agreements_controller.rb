@@ -7,6 +7,6 @@ class AgreementsController < ApplicationController
   end
 
   def reject
-    redirect_to Setting[:plugin_redmine_agreement][:reject_agreement_page]
+    redirect_to Setting.plugin_redmine_agreement['reject_agreement_page']
   end
 end
