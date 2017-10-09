@@ -1,3 +1,4 @@
+[![Rate at redmine.org](http://img.shields.io/badge/rate%20at-redmine.org-blue.svg?style=flat)](http://www.redmine.org/plugins/redmine_agreement)
 # Redmine Agreement Plugin
 
 *[Русская версия документации](README.ru.md)*
