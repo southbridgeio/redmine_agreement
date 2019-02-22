@@ -20,6 +20,7 @@ module RedmineAgreement
               plugin_settings['reject_agreement_page'].present? &&
               !user.anonymous? &&
               !user.admin? &&
+              !user.must_change_password? &&
               !user.accept_agreement?
         end
 
