@@ -4,8 +4,6 @@ module RedmineAgreement
       def self.included(base)
         # :nodoc:
         base.class_eval do
-          unloadable
-
           before_action :check_agreement
 
           private

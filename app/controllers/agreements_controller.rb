@@ -1,6 +1,4 @@
 class AgreementsController < ApplicationController
-  unloadable
-
   def accept
     User.current.update(accept_agreement_at: Time.now)
     redirect_to '/'
